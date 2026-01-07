@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<audio id="winSound" src="win.mp3"></audio>
+<audio id="loseSound" src="lose.mp3"></audio>
+<button id="soundToggle" onclick="toggleSound()">🔊 Sound ON</button>
+
+<body>
+    <div id="confettiLayer"></div>
+
+<div id="emojiLayer"></div>
+
+<div class="game">
+  <h1>Rock Paper Scissors</h1>
+
+  <p class="score">
+    You: <span id="userScore">0</span> |
+    Computer: <span id="computerScore">0</span>
+  </p>
+
+  <p id="maxPointsDisplay">Playing up to: -- points</p>
+
+
+  <div class="choices">
+    <button onclick="play('rock')">🪨 Rock</button>
+    <button onclick="play('paper')">📄 Paper</button>
+    <button onclick="play('scissors')">✂️ Scissors</button>
+  </div>
+
+  <button class="reset" onclick="resetGame()">Reset Game</button>
+
+
+  <p id="result">Make your move!</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
